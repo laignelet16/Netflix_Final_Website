@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Netflix Boot Camp - Cart</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="styles.css">
+		</head>
+		<body id = "cart_website">
+			<!-- top navbar -->
+			<div class="navbar">
+				<h1>JL - AL - LJ  Game Store</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="game.html">Game</a></li>
+					<li><a href="console.html">Console</a></li>
+					<li><a href="t_shirt.html">T-Shirt</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+				<button class="start">Enter Our Game Store</button>
+			</div>
+			<a href="cart.html" class="logo"><img src="images/game.png" alt="game store icon" class="logo"></a>
+
+			<!-- form for the invoice -->
+			<div class="container">
+				<div class="cart-logo" id="cart-logo">
+				</div>
+				<div class="game-title">Invoice!</div>
+				<div class="inputs">
+					<label>Name</label>
+					<input id="name" type="text" placeholder="Write your name!"/>
+					<label>Street</label>
+					<input id="street" type="text" placeholder="Write your street!"/>
+					<label>City</label>
+					<input id="city" type="text" placeholder="Write your city!"/>
+					<label>State</label>
+					<input id="state" type="text" placeholder="Write your city!"/>
+					<label>Zip Code</label>
+					<input id="zipCode" type="text" placeholder="Write your zip code!"/>
+					<label>Item Type</label>
+					<input id="item_type" type="text" placeholder="Write your item type!"/>
+					<label>Item Id</label>
+					<input id="item_id" type="number" step="any" placeholder="Place in the item id">
+					<label>Unit Price</label>
+					<input id="unit_price" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Subtotal</label>
+					<input id="Subtotal" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Tax</label>
+					<input id="tax" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Processing Fee</label>
+					<input id="fee" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Total</label>
+					<input id="fee" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Quantity</label>
+					<input id="quantity_invoice" type="number" placeholder="How many?"/>
+					 <button id="submit" type="submit">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- image of the invoice - a receipt -->
+			<div class="circle">
+				<img class="receipt_img" id="receipt_img" src="images/receipt-removebg-preview.png" alt="Receipt">
+			</div>
+		</body>
+	</html>

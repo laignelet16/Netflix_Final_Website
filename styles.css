@@ -1,0 +1,537 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+/*index.html*/
+div.navbar {
+	width:100%;
+	background-color: #F6E8EA;
+	height: 50px;
+}
+
+ul {
+	position: absolute;
+}
+
+h1 {
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 14px;
+	font-family: monospace;
+}
+
+img.logo {
+	position: absolute;
+	width: 70px;
+	right: 5%;
+	bottom: 5%;
+	-webkit-animation-duration: 1.5s;
+  	animation-duration: 1.5s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+  	-webkit-animation-timing-function: ease-in-out;
+  	animation-timing-function: ease-in-out;
+  	animation-iteration-count: infinite;
+  	-webkit-animation-iteration-count: infinite;
+}
+
+img.logo:hover {
+	cursor: pointer;
+	animation-name: bounce;
+	-moz-animation-name: bounce;
+}
+
+button.start {
+	position: absolute;
+	margin-left: 90%;
+	margin-top: 8px;
+	padding: 8px 16px 8px 16px;
+	border-radius: 30px;
+	border: 3px solid black;
+	background-color: #78CDD7;
+}
+
+button.start:hover {
+	background-color: #274690;
+	color: white;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	margin-left: 22%;
+	margin-top: 15px;
+}
+
+ul li a {
+	margin-left: 95px;
+	color: #E43F6F;
+	font-size: 20px;
+	font-family: fantasy;
+}
+
+h5 {
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 48%;
+	font-size: 35px;
+}
+
+h2 {
+	position: absolute;
+	margin-top: 280px;
+	margin-left: 48%;
+	font-size: 60px;
+}
+
+.all {
+	font-family: fantasy;
+}
+
+button.get {
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 48%;
+	padding: 8px 16px 8px 16px;
+	border-radius: 16px;
+	border: 2px solid black;
+	background: gray;
+	cursor: pointer;
+}
+
+button.get:hover {
+	background: black;
+}
+
+h6 {
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 48%;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+
+div.mid {
+	background-color: #78CDD7;
+	height: 750px;
+}
+
+img.main {
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 8%;
+}
+
+div.new {
+	position: absolute;
+	background-color: #EE8434;
+	border-radius: 50%;
+	width: 550px;
+	height: 550px;
+	margin-top: 5%;
+	margin-left: 7%;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  30%,
+  60%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+img.social {
+	position: absolute;
+	width: 200px;
+	left: 5%;
+	bottom: -5%;
+}
+
+/*game logo*/
+.container {
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 5%;
+	align-items: center;
+	text-align: center; 
+	justify-content: center;
+	place-items: center;
+	overflow: hidden;
+	font-family: fantasy;
+	width: 350px;
+	height: 680px;
+	border-radius: 25px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #ecf0f3;
+	box-shadow: 14px 14px 20px gray;
+}
+
+#game-logo{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-image: url(images/game-folder.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 8px 8px 10px gray, -8px -8px 12px white;
+}
+
+.inputs {
+	text-align: left;
+	margin-top: 1px;
+}
+
+label, input {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+label { 
+	margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+	margin-top: 12px;
+}
+
+input::placeholder {
+	color: gray;
+}
+
+input {
+	background: lightgray;
+	padding: 10px;
+	padding-left: 20px;
+	height: 30px;
+	font-size: 15px;
+	border-radius: 50px;
+	box-shadow: inset 7px 7px 7px gray, inset -7px -7px 7px white;
+}
+
+#submit {
+	height: 5px;
+	width: auto;
+}
+
+.game-title {
+	margin-top: 15px;
+	font-size: 50px;
+}
+
+#game_website {
+	display: flex;
+	background-color: lightblue;
+}
+
+#game_track {
+	width: 40%;
+	height: 40%;
+	margin-top: 10%;
+	margin-left: -50%;
+	border: 20px double black;
+}
+
+#console-logo{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-image: url(images/laptop.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 8px 8px 10px gray, -8px -8px 12px white;
+}
+
+#console_website {
+	display: flex;
+	background-color: #AC92A6;
+}
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	margin-left: -40%;
+	margin-top: 10%;
+}
+
+.console {
+	position: relative;
+	width: 20vw;
+	height: 30vw;
+	border-radius: 5% 5% 20% 5%;
+	border: 5px solid;
+	border-color: gray lightgray grey slategray;
+	background-color: #CAE5FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.glass {
+	position: absolute;
+	width: 18vw;
+	height: 25vh;
+	border-radius: 5% 5% 20% 5%;
+	background-color: gray;
+	border: 3px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 5%;
+}
+
+.screen {
+	width: 18vw;
+	height: 9.5vh;
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.console_screen {
+	border-color: lightblue darkgreen lightblue darkgreen;
+	border: 3px solid;
+	width: 12vw;
+	height: 14vh;
+	background-color: yellowgreen;
+	margin-top: -40px;
+	margin-left: 10px;
+}
+
+.small_light {
+	width: 5px;
+	height: 5px;
+	background-color: orange;
+	border-radius: 50%;
+	justify-self: center;
+	align-self: center;
+	margin-right: 0.5vw;
+}
+
+.green_line {
+	margin-top: 3vw;
+	width: 15vw;
+	height: 3px;
+	background-color: green;
+}
+
+.play_game_buttons {
+	top: 200px;
+	width: 15vw;
+	height: 12vw;
+	transform: rotate(-30deg);
+	margin: .5vw 3vw 0 0;
+}
+
+.select-alignment {
+	position: relative;
+	top: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.start-button, .select-button {
+	width: 3vw;
+	height: 1vw;
+	display: flex;
+	align-items: center;
+	background-color: blue;
+}
+
+.select-button:hover, .start-button:hover {
+	background-color: red;
+}
+
+
+
+.plus_button {
+	position: relative;
+	width: 2vw;
+	height: 2vw;
+	cursor: pointer;
+	top: 200px;
+	left: -100px;
+}
+
+.plus_button::before, .plus_button::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 4vw;
+	width: 1vw;
+	background-color: navy;
+	left: 2vw;
+	border-color: black;
+}
+
+.plus_button::before{
+	transform: rotate(90deg);
+}
+
+.green_buttons {
+	width: 8vw;
+	height: 4vwm;
+	transform: rotate(-30deg);
+}
+
+.a_b_buttons {
+	position: absolute;
+	margin-top: 5%;
+	background-color: hotpink;
+	width: 8vw;
+	height: 4vw;
+	border-radius: 5vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0.5vw 0 0 0;
+	top: 50px;
+	left: 30px;
+}
+
+.buttons-name-1 {
+	margin-top: -40px;
+}
+
+.A_button, .B_button {
+	background-color: yellow;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.A_button:hover, .B_button:hover {
+	background-color: orange;
+}
+
+.buttons-name {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 22px;
+	margin-left: 15px;
+}
+
+/*t-shirt website*/
+#t_shirt_website {
+	background-color: #CEDFD9;
+}
+
+.container2 {
+	position: absolute;
+	top: 20%;
+	right: 30%;
+}
+
+.neck {
+	background: black;
+	border-radius: 4em;
+	display: block;
+	height: 8em;
+	width: 8em;
+	margin-left: -4em;
+	position: absolute;
+	top: 0.2em;
+	left: 50%;
+	z-index: 4;
+}
+
+.neck::after {
+	content: "";
+	display: block;
+	background: #CEDFD9;
+	height: 8em;
+	width: 8em;
+	border-radius: 4em;
+	position: absolute;
+	top: -0.6em;
+	left: 0;
+}
+
+.body {
+	background: white;
+	box-shadow: 0 3px 0 #aaa;
+	display: block;
+	height: 26em;
+	width: 17em;
+	margin-left: -8em;
+	position: absolute;
+	top: 4em;
+	left: 50%;
+	z-index: 3;
+}
+
+.arms {
+	background: navy;
+	box-shadow: 0 3px blueviolet;
+	display: block;
+	height: 9em;
+	width: 30em;
+	margin-left: -14.5em;
+	position: absolute;
+	top:4em;
+	left: 50%;
+	z-index: 2;
+}
+
+.arms:hover {
+	background-color: orangered;
+}
+
+#t-shirt-logo  {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-image: url(images/shirt.png);
+	background-size: cover;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 8px 8px 10px gray, -8px -8px 11px white;
+}
+
+/*cart website*/
+#cart_website {
+	background-color: #EAC435;
+}
+
+.circle{
+	positon: absolute;
+	margin-left: 50%;
+	margin-top: 8%;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+	background-color: orange;
+	border: orangered solid 10px;
+}

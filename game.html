@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Netflix Boot Camp - Game</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="styles.css">
+		</head>
+		<body id = "game_website">
+			<!-- top navbar -->
+			<div class="navbar">
+				<h1>JL - AL - LJ  Game Store</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="game.html">Game</a></li>
+					<li><a href="console.html">Console</a></li>
+					<li><a href="t_shirt.html">T-Shirt</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+				<button class="start">Enter Our Game Store</button>
+			</div>
+			<a href="cart.html" class="logo"><img src="images/game.png" alt="game store icon" class="logo"></a>
+
+			<!-- form of the website -->
+			<div class="container">
+				<div class="game-logo" id="game-logo">
+				</div>
+				<div class="game-title">Game!</div>
+				<div class="inputs">
+					<label>Game Title</label>
+					<input id="game_title" type="text" placeholder="Max 50 characters long"/>
+					<label>ESRB Rating</label>
+					<input id="rating" type="text" placeholder="Max 50 characters long"/>
+					<label>Description</label>
+					<input id="description_game" type="text" placeholder="Max 255 characters long"/>
+					<label>Price</label>
+					<input id="price_game" type="number" step="any" placeholder="Max $999.99 and Min $0.00">
+					<label>Studio</label>
+					<input id="studio" type="text" placeholder="Max 50 characters long"/>
+					<label>Quantity</label>
+					<input id="quantity_game" type="number" placeholder="How many?"/>
+					 <button id="submit" type="submit">Add to Cart</button>
+				</div>
+			</div>
+
+			<!-- image part of the body -->
+			<img id="game_track" src="images/game_img.jpeg" alt="game-img" alt="game track pic">
+		</body>
+	</html>
